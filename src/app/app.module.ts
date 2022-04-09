@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MainPageModule } from './pages/main-page/main-page.module';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './shared/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MainPageModule
+    MainPageModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
