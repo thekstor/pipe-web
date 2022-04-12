@@ -1,4 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+:root {
+    --font-family-regular: "opensans-regular";
+    --font-family-bold: "opensans-bold";
+    --light-color: #fff;
+}
+:root.dark  {
+    --font-color: #fff;
+    --bg-color: #212529;
+}
+:root.light {
+    --font-color: #212529;
+    --bg-color: #fff;
+}   
+@font-face {
+    font-family: "opensans-regular";
+    font-display: swap;
+    src: url(/assets/fonts/OpenSans-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family: "opensans-bold";
+    font-display: swap;
+    src: url(/assets/fonts/OpenSans-SemiBold.ttf) format("truetype");
+}
+
+body {
+    font-family: var(--font-family-regular);
+    background-color: var( --bg-color);
+    color: var(--font-color);
+}
+
+b {
+    font-family: var(--font-family-bold);
+}
